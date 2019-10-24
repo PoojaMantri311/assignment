@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap')
+
+body, html
+    font-family: 'Open Sans', sans-serif
+
+.header
+    margin-bottom: 20px
+
+h1
+    display: inline-flex
+    align-items: flex-start
+    color: #fff
+    font-weight: 600
+    font-size: 18px
+    flex-flow: row
+
+
 a
     border: 0 none
     outline: 0
@@ -9,16 +26,10 @@ strong
 p
     margin: 0.75rem 0 0
 
-h1
-    font-size: 0.75rem
-    font-weight: normal
-    margin: 0
-    padding: 0
-
 img, .basket-module, .basket-labels, .basket-product
     width: 100%
 
-.basket, .basket-module, .basket-labels, .item, .price, .quantity, .subtotal, .basket-product, .product-image, .product-details
+.basket, .basket-module, .basket-labels, .item, .price, .quantity, .subtotal, .basket-product, .product-details
     float: left
 
 .price:before, .subtotal:before, .subtotal-value:before, .total-value:before, .promo-value:before
@@ -72,8 +83,8 @@ label
     padding: 0.6875rem 1.25rem 0.625rem
 
 .basket-labels
-    border-top: 1px solid #ccc
-    border-bottom: 1px solid #ccc
+    border-top: 1px solid #de2256
+    border-bottom: 1px solid #de2256
     margin-top: 1.625rem
 
 ul
@@ -122,7 +133,7 @@ li
     box-sizing: border-box
 
 .basket-product
-    border-bottom: 1px solid #ccc
+    border-bottom: 1px solid #de2256
     padding: 1rem 0
     position: relative
 
@@ -132,7 +143,7 @@ li
 .product-frame
     height: 30px
     display: flex
-    border: gray 1px solid
+    border: 1px solid #de2256
     padding: 6px
     font-size: 20px
     width: 50%
@@ -145,7 +156,7 @@ li
 
 .quantity-field
     background-color: #ccc
-    border: 1px solid #aaa
+    border: 1px solid #de2256
     border-radius: 4px
     font-size: 0.625rem
     padding: 2px
@@ -157,7 +168,7 @@ aside
     width: 30%
 
 .summary
-    border: 1px solid #aaa
+    border: 1px solid #de2256
     padding: 1rem
     position: fixed
     width: 250px
@@ -213,17 +224,20 @@ aside
     display: block
 
 .checkout-cta
-    display: block
-    float: none
-    font-size: 0.75rem
-    text-align: center
-    text-transform: uppercase
-    padding: 0.625rem 0
-    width: 100%
+    background: #de2256
+    border: 1px solid #fff
+    border-radius: 5px
+    padding: 5px 15px
+    line-height: 20px
+    font-size: 12px
+    font-weight: 600
+    color: #fff
+    cursor: pointer
+
+
 
 .summary-delivery-selection
-    background-color: #ccc
-    border: 1px solid #aaa
+    border: 1px solid #de2256
     border-radius: 4px
     display: block
     font-size: 0.625rem

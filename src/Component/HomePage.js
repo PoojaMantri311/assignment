@@ -39,14 +39,13 @@ export default class HomePage extends Component{
         return (
             <div>
                 <div className="header">
-                    <div className="column left"> All items</div>
-                    <div className="column middle">
-                            {this.props.counter} Item Added into cart</div>
-                    <div className="column right">
+                    <div className="column"> All items</div>
+                    <div className="column">
                         <button onClick={()=> history.push("/cart")}>Go to Cart </button>
+                        <span style={{marginRight:"10px"}}>{this.props.counter} Item Added into cart</span>
                     </div>
                 </div>
-                <div style={{display:'inline'}}>
+                <div style={{display:'box' ,marginTop : "30px" , marginLeft: "30px"}}>
                     {this.state.data.map(product => (
                         <div className="inline-display" key={product.id}>
                             <Product

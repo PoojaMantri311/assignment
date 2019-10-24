@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import '../style/App.sass';
+import '../style/ProductCart.sass';
 
 export default class ProductCart extends PureComponent{
 
@@ -12,7 +12,7 @@ export default class ProductCart extends PureComponent{
         let cost =(parseFloat(product.price).toFixed(2)) - (parseFloat(product.price))*(parseInt(product.discount))/100;
 
         return (
-            <div style={{height:"20%",borderTop: "solid black 1px", position:"relative"}}>
+            <div className="cart-bottom">
                 <div className="left" style={{position:"absolute", top:"3px"}}>{product.name}</div>
                 <div style={{display:"flex"}}>
                     <div className="left" style={{textDecoration: "line-through" , position:"absolute", bottom:"3px"}}>${product.price}</div>

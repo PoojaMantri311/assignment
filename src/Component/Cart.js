@@ -31,6 +31,9 @@ export default class Cart extends Component{
 
         return (
             <div>
+                <div className="header">
+                    <h1> Order Summary</h1>
+                </div>
                 <div className="basket">
                     <div className="basket-module">
 
